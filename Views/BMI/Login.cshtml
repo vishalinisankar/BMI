@@ -1,0 +1,247 @@
+﻿
+
+@model BMIWeb.Models.User_account
+@{
+    ViewBag.Title = "Login";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .page-wrapper {
+        min-height: 100vh;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 400;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .bg-dark {
+        background: #1a1a1a;
+    }
+    .p-t-100 {
+        padding-top: 100px;
+    }
+    .p-b-50 {
+        padding-bottom: 50px;
+    }
+    .wrapper--w900 {
+        max-width: 900px;
+    }
+    .wrapper {
+        margin: 0 auto;
+    }
+    .title {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    .card {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background: #fff;
+    }
+
+    .card-6 {
+        background: transparent;
+    }
+
+        .card-6 .card-heading {
+            background: transparent;
+        }
+
+        .card-6 .card-body {
+            background: #fff;
+            position: relative;
+            border: 1px solid #e5e5e5;
+            border-bottom: none;
+            padding: 30px 0;
+            padding-bottom: 0;
+            -webkit-border-top-left-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            border-top-left-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+            -moz-border-radius-topright: 3px;
+            border-top-right-radius: 3px;
+        }
+
+            .card-6 .card-body:before {
+                bottom: 100%;
+                left: 75px;
+                border: solid transparent;
+                content: "";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(255, 255, 255, 0);
+                border-bottom-color: #fff;
+                border-width: 10px;
+            }
+
+        .card-6 .card-footer {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-top: none;
+            -webkit-border-bottom-left-radius: 3px;
+            -moz-border-radius-bottomleft: 3px;
+            border-bottom-left-radius: 3px;
+            -webkit-border-bottom-right-radius: 3px;
+            -moz-border-radius-bottomright: 3px;
+            border-bottom-right-radius: 3px;
+            padding: 50px 55px;
+        }
+    .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .form-row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        padding: 24px 55px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+        .form-row .name {
+            width: 188px;
+            color: #333;
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 11px;
+        }
+
+        .form-row .value {
+            width: -webkit-calc(100% - 188px);
+            width: -moz-calc(100% - 188px);
+            width: calc(100% - 188px);
+        }
+
+
+
+
+</style>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="@Url.Action("Home","BMI")"><i class="fa fa-child" style="font-size:20px;color:white; padding-right:5px;"></i>Unfit2<b>Fit</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto" style="margin-left:700px;">
+
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Home","BMI")"> Home  </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="@Url.Action("About","BMI")">About  </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="@Url.Action("Contact","BMI")">Contact </a>
+            </li>
+
+
+        </ul>
+        <div style="padding:10px;">
+            <form class="form-inline my-2 my-lg-0">
+
+                @Html.ActionLink("Login", "Login", null, new { @class = "btn btn-outline-warning" })
+            </form>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+
+            @Html.ActionLink("New user", "Register", null, new { @class = "btn btn-outline-danger" })
+        </form>
+    </div>
+
+
+</nav>
+<a href="~/App_Start/BundleConfig.cs"></a>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="page-wrapper bg-dark p-t-100 p-b-50">
+    <div class="wrapper wrapper--w900">
+        <div class="card card-6">
+            <div class="card-heading">
+                <h2 class="title">LOGIN</h2>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    <div style="margin-left:280px;">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                <div class="form-name">
+                                    @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="value">
+                                        @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            <div class="form-name">
+                                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="value">
+                                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                                </div>
+                            
+                            
+                                </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer" >
+                    <div style="margin-left:270px;">
+                                    <input type="submit" value="Login" class="btn btn-warning" style="margin-right:50px; padding-right:19px; padding-left:19px; padding-bottom:6.5px; padding-top:6px;" />
+                                    @Html.ActionLink("New user", "Register", null, new { @class = "btn btn-danger" })
+                        </div>
+                                
+                    </div>
+            </div>
+                </div>
+</div>
+                    }
+
+
+                    @section Scripts {
+                        @Scripts.Render("~/bundles/jqueryval")
+                    }
+
+
+
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+
+
+
+
+                    
+                    

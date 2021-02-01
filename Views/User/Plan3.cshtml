@@ -1,0 +1,408 @@
+﻿
+@{
+    ViewBag.Title = "Plan3";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><i class="fa fa-child" style="font-size:20px;color:white; padding-right:5px;" aria-hidden="true"></i>Unfit2<b>Fit</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="@Url.Action("Home","BMI")" style="font-size:20px;color:white; margin-left:1450px;">
+        <b>Logout</b><i class="fa fa-sign-out fa-4" style="font-size:20px;color:white; padding-left:5px;" aria-hidden="true"></i>
+    </a>
+
+
+
+</nav>
+<style>
+    .small {
+        font-size: 110%;
+    }
+
+    .White-Yellow {
+        border-top: 0;
+        border-left: 75px solid #fff;
+        border-right: 75px solid #FEF200;
+        height: 5px;
+        width: 0px;
+    }
+</style>
+<div class="container-fluid">
+    <header>
+        <h4 class="display-4 mb-4 text-center" style="margin-top:20px;">WEIGHT LOSS PLAN</h4>
+        <hr class="White-Yellow">
+
+    </header>
+    <div class="row border border-right-0 border-bottom-0">
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 1</span>
+
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 5</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 50</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 10</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 20</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 2</span>
+
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 5</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 55</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 15</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 21</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 3</span>
+                <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 7</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 60</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 15</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 22</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 4</span>
+                <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 7</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 25</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 23</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 5</span>
+                <small class="col d-sm-none text-center text-muted">Thursday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 8</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 70</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 30</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : REST</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 6</span>
+                <small class="col d-sm-none text-center text-muted">Friday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 9</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 75</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 35</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 25</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 7</span>
+                <small class="col d-sm-none text-center text-muted">Saturday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 80</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 26</a>
+        </div>
+        <div class="w-100"></div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 8</span>
+                <small class="col d-sm-none text-center text-muted">Sunday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 8</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 45</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 27</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 9</span>
+                <small class="col d-sm-none text-center text-muted">Monday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 9</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 100</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 45</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 28</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 10</span>
+                <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 10</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 105</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 50</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 29</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 11</span>
+                <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 10</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 110</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 55</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : REST</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 12</span>
+                <small class="col d-sm-none text-center text-muted">Thursday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 12</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 55</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 31</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 13</span>
+                <small class="col d-sm-none text-center text-muted">Friday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 12</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 130</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 32</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 14</span>
+                <small class="col d-sm-none text-center text-muted">Saturday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 135</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 60</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 33</a>
+        </div>
+        <div class="w-100"></div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 15</span>
+                <small class="col d-sm-none text-center text-muted">Sunday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 13</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 140</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 65</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 34</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 16</span>
+                <small class="col d-sm-none text-center text-muted">Monday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 15</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 65</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 35</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 17</span>
+                <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 16</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 150</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 70</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 36</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 18</span>
+                <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 16</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 155</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 70</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : REST</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 19</span>
+                <small class="col d-sm-none text-center text-muted">Thursday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 19</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 160</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 75</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 38</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 20</span>
+                <small class="col d-sm-none text-center text-muted">Friday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 21</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 75</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 39</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 21</span>
+                <small class="col d-sm-none text-center text-muted">Saturday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 180</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 75</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 40</a>
+        </div>
+        <div class="w-100"></div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 22</span>
+                <small class="col d-sm-none text-center text-muted">Sunday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 23</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 185</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 41</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 23</span>
+                <small class="col d-sm-none text-center text-muted">Monday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 26</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 190</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 80</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 42</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 24</span>
+                <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 28</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 80</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 43</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 25</span>
+                <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 30</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 220</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 85</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : REST</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 26</span>
+                <small class="col d-sm-none text-center text-muted">Thursday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 32</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 225</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 85</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 45</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 27</span>
+                <small class="col d-sm-none text-center text-muted">Friday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 34</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 230</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 90</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 46</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 28</span>
+                <small class="col d-sm-none text-center text-muted">Saturday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 36</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 47</a>
+        </div>
+        <div class="w-100"></div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 29</span>
+                <small class="col d-sm-none text-center text-muted">Sunday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 38</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 240</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 95</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 49</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 30</span>
+                <small class="col d-sm-none text-center text-muted">Monday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 40</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : 250</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : 100</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 50</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+            <h5 class="row align-items-center">
+                <span class="date col-1">DAY 31</span>
+                <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                <span class="col-1"></span>
+            </h5>
+            <a class="event d-block p-2 pl-2 pr-3 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 2">Pushups : 45</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-white" title="Test Event 3">Squats : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Situps : REST</a>
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Lunges : 60</a>
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+
+
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate">
+
+        </div>
+        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate">
+
+        </div>
+        <div class="w-100"></div>
+
+
+
+
+    </div>
+</div>
+
+
+
+

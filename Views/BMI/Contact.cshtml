@@ -1,0 +1,132 @@
+﻿
+@{
+                /**/
+
+                ViewBag.Title = "Contact";
+}
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+@using (Html.BeginForm())
+{
+
+
+
+        @Html.AntiForgeryToken()
+<div>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @if (ViewBag.Message != null)
+    {
+        <div class="form-group">
+            <div>@ViewBag.Message</div>
+        </div>
+    }
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="@Url.Action("Home","BMI")"><i class="fa fa-child" style="font-size:20px;color:white; padding-right:5px;"></i>Unfit2<b>Fit</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto" style="margin-left:700px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Home","BMI")"> Home  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="@Url.Action("About","BMI")">About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="@Url.Action("Contact","BMI")">Contact </a>
+                </li>
+            </ul>
+            <div style="padding:10px;">
+                <form class="form-inline my-2 my-lg-0">
+                    @Html.ActionLink("Login", "Login", null, new { @class = "btn btn-outline-warning" })
+                </form>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                @Html.ActionLink("New user", "Register", null, new { @class = "btn btn-outline-danger" })
+            </form>
+        </div>
+    </nav>
+
+
+        <div class="limiter">
+    <div class="container-login100" style="margin-top:40px; ">
+
+            <div class="wrap-login100">
+                <div class="login100-form-title" style="background-image: url('~/Content/bg-01.jpg');">
+                    <span class="login100-form-title-1">
+                        Keep in Touch
+                    </span>
+                </div>
+
+                <form class="login100-form validate-form">
+                    <div class="wrap-input100  m-b-26" style="margin-top:40px; margin-bottom:30px; border-bottom:none;">
+                        <div class="form-group">
+                            <span class="label-input100">Full Name</span>
+                            <input name="Fullname" type="text" id="Fullname" class="form-control" required>
+                            <span class="focus-input100"></span>
+                        </div>
+                    </div>
+                    <div class="wrap-input100  m-b-26" style="margin-bottom:30px; border-bottom:none;">
+                        <div class="form-group">
+
+                            <span class="label-input100">Email</span>
+                            <input name="Email" type="text" id="Email" class="form-control" required>
+                        </div>
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100  m-b-26" style="margin-bottom:30px; border-bottom:none;">
+                        <div class="form-group">
+                            <span class="label-input100">Phone Number</span>
+                            <input name="Number" type="text" id="Number" class="form-control" required>
+
+
+                        </div>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 m-b-26 validate-input" style="margin-bottom:30px; border-bottom:none;">
+                        <div class="form-group">
+                            <span class="label-input100">Description</span>
+                            <textarea class="input100" name="message" placeholder="Your Comment..."></textarea>
+                        </div>
+                        <span class="focus-input100"></span>
+                    </div>
+
+
+
+                    <div class="container-login100-form-btn">
+                        <input type="button" value="Submit" class="btn btn-lg btn-success pull-center" style="margin-top:30px; ">
+
+
+
+
+                    </div>
+
+
+
+                </form>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+       
+
+
+
+
+
+
+    }
+
+

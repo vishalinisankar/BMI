@@ -1,0 +1,108 @@
+﻿@model BMIWeb.Models.User_account
+
+@{
+    ViewBag.Title = "About";
+
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="@Url.Action("Home","BMI")"><i class="fa fa-child" style="font-size:20px;color:white; padding-right:5px;"></i>Unfit2<b>Fit</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <ul class="navbar-nav mr-auto " style="margin-left:700px;  ">
+
+        <li class="nav-item ">
+            <a class="nav-link " href="@Url.Action("Home","BMI")"> Home </a>
+        </li>
+
+        <li class="nav-item link">
+            <a class="nav-link " href="@Url.Action("About","BMI")">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="@Url.Action("Contact","BMI")">Contact </a>
+        </li>
+
+    </ul>
+    <div style="padding:10px;">
+        <form class="form-inline my-2 my-lg-0">
+
+            @Html.ActionLink("Login", "Login", null, new { @class = "btn btn-outline-warning" })
+        </form>
+    </div>
+
+    <form class="form-inline my-2 my-lg-0">
+
+        @Html.ActionLink("New user", "Register", null, new { @class = "btn btn-outline-danger" })
+    </form>
+
+
+
+</nav>
+
+
+<!------ Include the above in your HEAD tag ---------->
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<div class="aboutus-section" style="margin-top:100px;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-8 col-xs-12">
+                <div class="feature">
+                    <div class="feature-box">
+                        <div class="feature-content">
+                            <div class="aboutus">
+                                <div class="arrow right"></div>
+                                <h4> What is a BMI calculator?</h4>
+                                <p>Today the busy life scenario everyone has no time to make healthy food so they just go to the market and take some fast food as a breakfast, lunch, and dinner which increase the <b>Standard Body Mass Index</b>. According to the <b>National Institutes of Health (NIH)</b> that "A BMI of less than 18.5 means that a person is underweight. A <b>Body Mass Index</b> of between 18.5 and 24.9 is ideal. If it between 25 and 29.9 is overweight." So it should be necessary to take help of BMI Calculator for maintaining good health.</p>
+                                <div class="arrow right"></div>
+                                <h4>How BMI (Body Mass Index) calculator Help you?</h4>
+                                <p>The <b>BMI (Body Mass Index) Calculator</b> helps you to check the current status of your body to take precaution before you got a heavyweight or losing weight, so everyone needs to take the help of a <b>Body Mass Index or BMI Calculator</b> to measure this for good health to reduce obesity.</p>
+
+                            </div>
+                            <a class="aboutus-more btn btn-success" href="@Url.Action("Glossary","BMI")">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="aboutus-banner">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQws6ib4CTLQ1b2yFVA8DOvZWeoQAoIKYpa2w&usqp=CAU" height="700px" width="300px" alt="">
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="feature">
+                    <div class="feature-box">
+
+                        <div class="clearfix">
+
+                            <div class="feature-content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="arrow right"></div>
+                        <div class="clearfix">
+
+                            <div class="feature-content">
+                                <h4>What is the ideal BMI for a woman? And how BMI calculator can help you?</h4>
+                                <p>The healthy BMI range is the same for men and women, so the results apply to both. <b>The healthy traditional weight vary could be a </b> BMI between eighteen.5 and 24.9. A body mass index of 22 is in the middle of that range. With the help of <b>BMI Calculator</b>, you can measure your current status of your Body Mass Index (BMI).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="arrow right"></div>
+                        <div class="clearfix">
+                            <div class="feature-content ">
+                                <h4>How BMI Calculator is helpful for your kids?</h4>
+                                <p>The BMI Calculator follows a <b>model for kids</b> that, If your kid is a 14-year-old kid who is 5ft 3 inches tall and gauges 120 pounds, for instance, his BMI is 21.3 which places him in the 76th percentile. This BMI figure shows that he is at a sound weight because the correct range is somewhere in the range of 90 and 128 pounds, in this case, you can take help of the BMI calculator. Because it not only shows the Body Mass Index also gives you a diet chart for your kids.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
